@@ -1,6 +1,6 @@
 # LabJackU3
 
-Fairly comprehensive MATLAB wrapper class for controlling a LabJack U3 via the Exodriver under Linux/MacOSX  
+The goal is to create a fairly comprehensive MATLAB wrapper class for controlling a LabJack U3 via the Exodriver under Linux/MacOSX  
 (Note: class currently opens LabJack if only one device was found and if this device is a U3! changes to the class are necessary if you want to run multiple Labjacks and/or a U6)
 
 inspired by iandol, M.A. Hopcroft and other people in the LabJack forum, you guys are great :-)  
