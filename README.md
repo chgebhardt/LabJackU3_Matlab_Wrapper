@@ -5,7 +5,7 @@ Fairly comprehensive MATLAB wrapper class for controlling a LabJack U3 via the E
 
 inspired by iandol, M.A. Hopcroft and other people in the LabJack forum, you guys are great :-)  
 
-TESTESTTEST U3 manual: https://labjack.com/support/datasheets/u3  
+U3 manual: https://labjack.com/support/datasheets/u3  
 U3 exodriver: https://github.com/labjack/exodriver  
 
 2017/03/08   
