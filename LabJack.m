@@ -31,33 +31,9 @@
 % 
 % 2017/03/10 added error_handling function (called from within each
 %            function)
-%            added generic feedback function?
-% 2017/03/15 finished feedback function
+%            added generic feedback function
+% 2017/03/15 feedback function done
 %
-% To-Do:
-%        - are DirWrite and StateWrite opposites? i.e. is it possible to
-%        have State = 0 and Dir = In at the same time??? -> Forum?
-%        - test all functions if they work
-%        - stream
-%        - error handling/messaging (need to know which function threw the error and the message
-%        - verbose and debug modes
-%        - ConfigU3: no write functionality yet
-%        - ConfigIO: * no DAC1enable or UART Pins option implemented
-%                    * write better documentation (what is FIOAnalog etc)
-%        - ConfigTimerClock: * put vararg for read_write and the ClockDivisor because its not necessary or even working
-%                            if read_write is 0 and ClockRate 0-2
-%                            * check if port was configured as timer first
-%                            * Note that Counter0 is not available with certain timer clock base frequencies
-%                             (those that support a divisor). In such a case, it does not use an external FIO/EIO pin.
-%                             An error will result if an attempt is made to enable Counter0 when one of these frequencies is configured.
-%                             Similarly, an error will result if an attempt is made to configure one of these frequencies when Counter0 is enabled.
-%        - AIN: data calibration not fully tested, also some parameter combinations might not work
-%        - PortStateWrite: writes always to all portbits! (writeMask = [255,255,255])
-%        - PortDirWrite:  writes always to all portbits! (writeMask = [255,255,255])
-%        - move methods (in private maybe etc) and properties access
-%        - what is dev_descriptor_release_number?
-%        - check the timer function !!!
-
 % Note: class currently only opens device if only one device was found and if this device is a U3!!!
 
 classdef LabJack < handle
