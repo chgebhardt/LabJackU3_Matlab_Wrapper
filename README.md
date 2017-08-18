@@ -50,7 +50,7 @@ To-Do:
        - are DirWrite and StateWrite opposites? i.e. is it possible to have State = 0 and Dir = In at the same time??? -> Forum?       
        - test all functions if they work  
        - stream  
-       - error handling/messaging (need to know which function threw the error and the message)  
+       - enumeration class: error handling/messaging (need to know which function threw the error and the message)  
        - verbose and debug modes  
        - ConfigU3: no write functionality yet  
        - ConfigIO: * no DAC1enable or UART Pins option implemented  
