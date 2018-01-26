@@ -69,3 +69,10 @@ To-Do:
        - move methods (in private maybe etc) and properties access  
        - what is dev_descriptor_release_number?  
        - check the timer function !!!
+
+Usage: 
+
+lj = LabJack;              % class initialization, automatically loads calibration constants, device info and sets inputs to default values
+lj.get_feedback(lj.LED(0)) % switches LED off
+lj.get_feedback(lj.LED(1)) % switches LED back on
+

@@ -34,7 +34,8 @@
 %            added generic feedback function
 % 2017/03/15 feedback function done
 %
-% Note: class currently only opens device if only one device was found and if this device is a U3!!!
+% Note: class currently only opens device if only one device was found and if this device is a U3,
+%       error is thrown otherwise!
 
 classdef LabJack < handle
     
@@ -293,7 +294,7 @@ classdef LabJack < handle
                 
                 fprintf('More than one LabJack device found! \n');
                 
-            elseif obj.connected_labjack_models{1,2} == 0
+            elseif obj.connected_labjack_models{1, 2} == 0
                 
                 fprintf('No LabJack U3 found! \n');
                 
@@ -723,7 +724,7 @@ classdef LabJack < handle
                 return
             end
             
-            % splits received byte in parts according to each subfunction given by subfunctions_read_byte_length
+            % function splits received byte in individual parts for each subfunction determined by subfunctions_read_byte_length
             
             tmp = mat2cell(obj.byte_received(10:end), 1, cell2mat(subfunctions_read_byte_length));
             for ii = 1:feedback_commandlist_no
