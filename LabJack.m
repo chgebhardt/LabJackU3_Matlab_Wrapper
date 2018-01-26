@@ -34,7 +34,7 @@
 %            added generic feedback function
 % 2017/03/15 feedback function done
 %
-% Note: class currently only opens device if only one device was found and if this device is a U3,
+% Note: class currently only opens device if only ONE device was found and if this device is a U3,
 %       error is thrown otherwise!
 
 classdef LabJack < handle
