@@ -72,7 +72,9 @@ To-Do:
 
 Usage: 
 
-lj = LabJack;              % class initialization, automatically loads calibration constants, device info and sets inputs to default values
+lj = LabJack;   % class initialization, loads calibration constants, device info and sets inputs to default values
+
 lj.get_feedback(lj.LED(0)) % switches LED off
+
 lj.get_feedback(lj.LED(1)) % switches LED back on
 
