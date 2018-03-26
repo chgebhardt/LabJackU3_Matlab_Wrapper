@@ -70,7 +70,7 @@ To-Do:
        - what is dev_descriptor_release_number?  
        - check the timer function !!!
 
-Usage (assumes Exodriver is installed): 
+Example usage (assumes Exodriver is installed): 
  
 lj = LabJack;   % class initialization, loads calibration constants, device info and sets inputs to default values
 
