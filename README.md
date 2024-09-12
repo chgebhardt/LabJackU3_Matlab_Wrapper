@@ -1,4 +1,4 @@
-# LabJackU3
+# LabJackU3 Matlab Wrapper
 
 The goal is to create a fairly comprehensive MATLAB wrapper class for controlling a LabJack U3 via the Exodriver under Linux/MacOSX  
 
