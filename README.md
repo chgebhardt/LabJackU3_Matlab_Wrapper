@@ -78,3 +78,7 @@ lj.get_feedback(lj.LED(0)) % switches LED off
 
 lj.get_feedback(lj.LED(1)) % switches LED back on
 
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
